@@ -7,6 +7,7 @@
 
             <form method="post" action="{{route('news.store')}}" enctype="multipart/form-data">
                 {{-- <input type="hidden" - cia perduodame duomenu bazei vartotojo id --}}
+                {{-- analogisku budu id galime perduoti NewsController kontroleriui --}}
             <input type="hidden" value="{{Auth::user()->id}}" name="user">
             @csrf
             <div class="form-group">
