@@ -4,7 +4,7 @@
 <div class="container">
 
     <div class="col-md-6 mx-auto">
-
+        {{-- Message START --}}
         @if(session()->has('message'))
             <div class="alert alert-success alert-dismissible fade show" role="alert">
                 <strong>Done !!! </strong>{{ session()->get('message') }}
@@ -13,6 +13,7 @@
                 </button>
             </div>
         @endif
+        {{-- Message END --}}
 
         <h1>Todo List</h1>
             <form method="POST" action={{route('task.index')}}>
